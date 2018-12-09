@@ -58,7 +58,7 @@ cv::Mat EightPoint::ransacEightPointAlgorithm(std::vector<DMatch> matches, std::
     // normalizeMatchesPoints(pts_left, pts_right, matches, kpt_l, kpt_r, leftScaling, rightScaling);
 
     // std::vector<bool> bestInliers;
-    int bestNumInliers = 8;
+    int bestNumInliers = ransacMinSet;
 
     int n = 0;
     long int r          = 1000;//adjusted dinamically
